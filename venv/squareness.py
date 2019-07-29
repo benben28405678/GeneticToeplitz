@@ -48,7 +48,7 @@ def avg(l):
     return count / len(l)
 
 
-def isSquare(l, margin=0):
+def is_square(l, margin=0):
     for i in l:
         if abs(i) > margin:
             return False
@@ -85,7 +85,7 @@ if TEST:
 
     lengths = [len12, len23, len34, len41]
 
-    print(Style.RESET_ALL + Style.BRIGHT + Fore.RED + 'TRIAL ' + Style.RESET_ALL)
+    print(Style.RESET_ALL + Style.BRIGHT + Fore.RED + '\nRESULTS ' + Style.RESET_ALL)
 
     print('Side lengths of polygon: ' + Fore.MAGENTA + str(lengths) + Fore.RESET)
 
@@ -97,4 +97,4 @@ if TEST:
 
     print('Differences between side lengths and average side length: ' + Fore.MAGENTA + str(offsetLen) + Fore.RESET)
 
-    print('The result! The set of points forms a square: ' + Style.BRIGHT + Fore.BLUE + str(isSquare(offsetLen)))
+    print('The result! The set of points forms a square: ' + Style.BRIGHT + Fore.BLUE + str(is_square(offsetLen)))
